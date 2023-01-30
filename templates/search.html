@@ -1,0 +1,17 @@
+<form method="post">
+    {% csrf_token %}
+    <input type="text" name="query">
+    <input type="submit" value="Search">
+  </form>
+  
+
+
+{% comment %} {% if search_results %}
+    <ul>
+        {% for result in search_results %}
+            <li><a href="{{ result }}">{{ result }}</a></li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>No results found.</p>
+{% endif %} {% endcomment %}
